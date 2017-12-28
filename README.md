@@ -8,6 +8,8 @@ Tests are located in the specs directory and can be run with the `rspec` command
 
 Tests cover the models (products, zinc_remote_infos) and the ZincClient which queries the Zinc api (the api response is saved in the spec/fixtures/cassettes directory).
 
+The insurance quote is fetched in the Products#index controller action before the page is served.
+
 In order to get the tests set up, run the following:
 
 `gem install bundler`
