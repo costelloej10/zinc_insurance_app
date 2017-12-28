@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic application that queries the Zinc api and shows a policy for a guitar.
 
-Things you may want to cover:
+There is one page that shows the only product in the database (created in a migration along with information about the remote insurance policy).
 
-* Ruby version
+Tests are located in the specs directory and can be run with the `rspec` command in the root directory.
 
-* System dependencies
+In order to get the tests set up, run the following:
 
-* Configuration
+`gem install bundler`
 
-* Database creation
+`bundle install`
 
-* Database initialization
+`rake db:migrate`
 
-* How to run the test suite
+`rails generate rspec:install`
 
-* Services (job queues, cache servers, search engines, etc.)
+`rake db:test:prepare`
 
-* Deployment instructions
+To run the application, run `rails s` and navigate your web browser to http://localhost:3000.
 
-* ...
+
+
