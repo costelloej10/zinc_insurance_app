@@ -1,0 +1,12 @@
+test:
+  :host: https://sandbox.zincplatform.com
+  :email: support@zincplatform.com
+  :auth_token: CxQCfo9myqPfx6s9PVxe
+development:
+  :host: https://sandbox.zincplatform.com
+  :email: support@zincplatform.com
+  :auth_token: CxQCfo9myqPfx6s9PVxe
+# production:
+  # :host: https://sandbox.zincplatform.com/api
+  # :email: support@zincplatform.com
+  # :auth_token: CxQCfo9myqPfx6s9PVxe

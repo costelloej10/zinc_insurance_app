@@ -1,0 +1,40 @@
+<div class="product_container">
+
+  <img id="product_image" src="https://cdn.shopify.com/s/files/1/0977/3554/products/phoenix-17001-1_580x@2x.jpg?v=1497368048"/>
+  <div class="product_details_container">
+    <div class="product_name">
+      <%= @product.name %>
+    </div>
+
+    <div class="product_price">
+      $<%= @product.price %>
+    </div>
+
+    <div class="product_zinc_policy">
+      <input id="zinc_insurance" type="checkbox">
+      <%= "$" + parse_zinc_policy_price(@zinc_policy) %>
+      <%= raw parse_zinc_policy_desc(@zinc_policy) %>
+    </div>
+
+    <div class="quantity_text">
+        Quantity
+    </div>
+    <div class="product_call_to_action">
+      <input id="quantity_input" type="text">
+
+      <button id="add_to_cart">Add To Cart</button>
+    </div>
+
+    <hr/>
+    Description
+    <hr/>
+
+    <div class="product_description_title">
+      <%= @product.description_title %>
+    </div>
+
+    <div class="product_description">
+      <%= @product.description %>
+    </div>
+  </div>
+</div>

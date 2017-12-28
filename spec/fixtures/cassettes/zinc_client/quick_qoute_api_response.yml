@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.zincplatform.com/api/quick_quotes
+    body:
+      encoding: UTF-8
+      string: '{"sku":{"category":"Musical","subcategory":"Guitar","price":3000},"zip_code":"10014","country_code":"US"}'
+    headers:
+      X-User-Email:
+      - support@zincplatform.com
+      X-User-Token:
+      - CxQCfo9myqPfx6s9PVxe
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Dec 2017 21:27:36 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c21e1b957b2d8378978e9eba24fba153"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 74673a28-c275-4ed2-b847-c3d91ff78c0b
+      X-Runtime:
+      - '0.103258'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '{"quick_quotes":[{"price":"95.00","id":null,"sku_id":null,"insurable_item_id":null,"price_per_year":"95.00","currency":"USD","provider":"Zinc
+        Powered by Anderson","quote_type":"Insurance","deductible":"50.00","description":"Insure
+        against loss, theft and damage with Zinc. \u003ca href=\"https://sandbox.zincplatform.com/providers/anderson/terms-and-conditions\"\u003eSee
+        Details\u003c/a\u003e","variant_id":null}]}'
+    http_version: 
+  recorded_at: Thu, 28 Dec 2017 21:27:37 GMT
+recorded_with: VCR 4.0.0
