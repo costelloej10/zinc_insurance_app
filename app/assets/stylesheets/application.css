@@ -74,4 +74,5 @@
 img#product_image {
   width:450px;
   float: left;
+  margin-top: 10px;
 }
